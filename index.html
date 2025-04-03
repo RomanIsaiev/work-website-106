@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Моя перша йога</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,1743 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <p class="short-info">Онлайн-курс</p>
+        <p class="short-info">
+          старт <span id="dateElement"></span> <span id="monthElement"></span>
+        </p>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">Моя перша йога</h1>
+          <p class="desc">
+            Отримайте здоровіше тіло без складних поз та довгих тренувань всього
+            за 28 днів, завдяки щоденній практиці йоги
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <p class="item-text">Безпечні вправи для новачків</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">Відео з покроковими інструкціями</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">Підходить для будь-якого віку</p>
+            </li>
+            <li class="list-item">
+              <p class="item-text">Підтримка тренера у чаті</p>
+            </li>
+          </ul>
+          <a class="btn" href="">приєднатися ЗІ ЗНИЖКОЮ -90%</a>
+        </div>
+      </section>
+      <section class="bonuses">
+        <div class="container">
+          <h2 class="title">Бонуси</h2>
+          <p class="subtitle">для тих, хто швидко приймає рішення:</p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="170"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="170"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span
+                  >Смачний PDF-гайд "5 легких рецептів здорового харчування на
+                  кожен день"</span
+                >
+                Збалансовані та прості у приготуванні вегетаріанські страви, які
+                наповнять ваше життя легкістю та зарядять енергією
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="170"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus"
+                  width="170"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span>Змістовне відео "Дихальні практики для початківців"</span>
+                Навчіться правильному диханню, яке допоможе вам розслабитися,
+                покращити концентрацію та отримати ще більше користі від
+                практики йоги та у щоденному житті
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-03-1x.png 1x,
+                    ./src/img/bonuses/bonus-03-2x.png 2x
+                  "
+                  width="170"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-03-1x.png"
+                  alt="bonus"
+                  width="170"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span>Чек-лист "Екологічний підхід до практики йоги"</span> Як
+                зробити свою практику більш усвідомленою: вибір килимка,
+                екологічного одягу та мінімізація відходів
+              </p>
+            </li>
+          </ul>
+          <p class="timer-title">Встигніть зареєструватися</p>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <div class="countdown-label minutes-label"></div>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <div class="countdown-label seconds-label"></div>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+              <div class="countdown-label milliseconds-label"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-whom">
+        <div class="container">
+          <h2 class="title">цей курс</h2>
+          <p class="subtitle">для тих:</p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/whom-01-1x.png 1x,
+                    ./src/img/for-whom/whom-01-2x.png 2x
+                  "
+                  width="44"
+                  height="auto" />
+                <img
+                  class="whom-image"
+                  src="./src/img/for-whom/whom-01-1x.png"
+                  alt="emoji"
+                  width="44"
+                  height="auto"
+              /></picture>
+              <p class="item-title">У КОГО НЕМАЄ ЧАСУ НА ТРЕНУВАННЯ</p>
+              <p class="item-desc">
+                Якщо вам здається, що заняття йогою потребують багато часу, сил
+                і спеціальної підготовки, цей курс змінить вашу думку
+              </p>
+              <ul class="include-list">
+                <li class="include-item">
+                  Гнучкий графік — займаєтесь коли зручно
+                </li>
+                <li class="include-item">М’яке занурення без перевантажень</li>
+                <li class="include-item">Лише 10 хвилин на день</li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/whom-02-1x.png 1x,
+                    ./src/img/for-whom/whom-02-2x.png 2x
+                  "
+                  width="44"
+                  height="auto" />
+                <img
+                  class="whom-image"
+                  src="./src/img/for-whom/whom-02-1x.png"
+                  alt="emoji"
+                  width="44"
+                  height="auto"
+              /></picture>
+              <p class="item-title">ХТО ВІДЧУВАЄ НАПРУГУ І СТРЕС</p>
+              <p class="item-desc">
+                Якщо ви постійно в русі, багато працюєте і не маєте часу
+                відпочити, йога допоможе вам перезавантажити тіло та розум
+              </p>
+              <ul class="include-list">
+                <li class="include-item">Покращує концентрацію і якість сну</li>
+                <li class="include-item">
+                  Легкі практики для пробудження свого тіла
+                </li>
+                <li class="include-item">Допомагає впоратися з втомою</li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/whom-03-1x.png 1x,
+                    ./src/img/for-whom/whom-03-2x.png 2x
+                  "
+                  width="44"
+                  height="auto" />
+                <img
+                  class="whom-image"
+                  src="./src/img/for-whom/whom-03-1x.png"
+                  alt="emoji"
+                  width="44"
+                  height="auto"
+              /></picture>
+              <p class="item-title">
+                ХТО ХОЧЕ ПОЧАТИ, АЛЕ БОЇТЬСЯ, ЩО НЕ ВИЙДЕ
+              </p>
+              <p class="item-desc">
+                Багато хто вважає, що йога — це лише для гнучких і тренованих
+                людей. Але насправді це практика, доступна кожному
+              </p>
+              <ul class="include-list">
+                <li class="include-item">
+                  Підходить навіть для абсолютних новачків
+                </li>
+                <li class="include-item">
+                  Ніякої акробатики — лише зрозумілі пози
+                </li>
+                <li class="include-item">Прості зрозумілі рухи</li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-whom/whom-04-1x.png 1x,
+                    ./src/img/for-whom/whom-04-2x.png 2x
+                  "
+                  width="44"
+                  height="auto" />
+                <img
+                  class="whom-image"
+                  src="./src/img/for-whom/whom-04-1x.png"
+                  alt="emoji"
+                  width="44"
+                  height="auto"
+              /></picture>
+              <p class="item-title">ХТО ХОЧЕ ЗАЙМАТИСЯ ВДОМА</p>
+              <p class="item-desc">
+                Якщо вам важко знайти час на студійні тренування або не хочеться
+                займатися в групі, цей курс ідеально впишеться у ваш ритм життя
+              </p>
+              <ul class="include-list">
+                <li class="include-item">
+                  Практикуєте у будь-який зручний час
+                </li>
+                <li class="include-item">
+                  Не потрібно спеціального обладнання
+                </li>
+                <li class="include-item">Можете займатися хоч в піжамі</li>
+              </ul>
+            </li>
+          </ul>
+          <p class="desc">
+            Цей курс — ваш шанс почати легко, без страху та перевантаження.
+            Просто спробуйте — ви здивуєтесь, як 10 хвилин можуть змінити
+            самопочуття.
+          </p>
+          <div class="price-box">
+            <div class="price-line"></div>
+            <p class="old-price">3470грн</p>
+            <p class="price">347грн</p>
+          </div>
+          <a class="btn white" href="">приєднатися ЗІ ЗНИЖКОЮ -90%</a>
+        </div>
+      </section>
+      <section class="author">
+        <div class="container">
+          <h2 class="title">Про автора</h2>
+          <div class="author-name-box">
+            <h3 class="author-name">Таня Кісса</h3>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <p class="item-number">[ 01 ]</p>
+              <p class="item-text">
+                Практикує йогу з 2013 року, навчалася в Індії
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">[ 02 ]</p>
+              <p class="item-text">
+                Інструктор хатха-йоги, що глибоко занурюється у традицію
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">[ 03 ]</p>
+              <p class="item-text">
+                Проводить персональні заняття онлайн та офлайн, працює з людьми
+                різного рівня підготовки
+              </p>
+            </li>
+            <li class="list-item">
+              <p class="item-number">[ 04 ]</p>
+              <p class="item-text">
+                Поєднує асани, усвідомлений рух, дихальні практики та
+                концентрацію уваги
+              </p>
+            </li>
+          </ul>
+          <p class="text space">
+            Йога — це не просто фізичні вправи.
+            <span
+              >Це можливість глибше пізнати себе, навчитися слухати своє тіло та
+              свідомо розвивати внутрішню рівновагу.</span
+            >
+            У сучасному ритмі життя нам часто бракує часу на себе, і я створила
+            цей курс саме для того, щоб кожен міг знайти свій момент тиші,
+            навіть у найбільш насиченому графіку
+          </p>
+          <p class="text">
+            <span>Цей курс — це м’яке знайомство з йогою.</span> Без складних
+            поз. Без тиску. Лише 10 хвилин на день, які допоможуть вам
+            перезавантажитися, зняти напругу і зробити перший крок до балансу та
+            гармонії
+          </p>
+        </div>
+      </section>
+      <section class="how-study">
+        <div class="container">
+          <h2 class="title">Як проходить</h2>
+          <p class="subtitle">курс?</p>
+          <p class="text margin">
+            Це 28 днів м’якого занурення у йогу, де кожен день ви знайомитеся з
+            однією базовою асаною
+          </p>
+          <p class="text">
+            Курс побудований так, щоб не перевантажувати вас складними позами чи
+            довгими заняттями – лише 10 хвилин на день, які легко впишуться у
+            ваш ритм життя
+          </p>
+          <div class="list-wrapper">
+            <img
+              class="arrow arrow-1 left"
+              src="./src/img/how-study/arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="arrow arrow-2 right"
+              src="./src/img/how-study/arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="arrow arrow-3 left"
+              src="./src/img/how-study/arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="arrow arrow-4 right"
+              src="./src/img/how-study/arrow.svg"
+              alt="arrow"
+            />
+            <ul class="list">
+              <li class="list-item">
+                <div class="image-box">
+                  <img
+                    src="./src/img/how-study/check.png"
+                    alt="check"
+                    width="20"
+                  />
+                </div>
+                <p class="item-text">
+                  1 день = 1 асана (коротке відео з поясненням виконання +
+                  теоретичні матеріали)
+                </p>
+              </li>
+              <li class="list-item">
+                <div class="image-box">
+                  <img
+                    src="./src/img/how-study/check.png"
+                    alt="check"
+                    width="20"
+                  />
+                </div>
+                <p class="item-text">
+                  6-й день – зв’язка (як поєднати асани в плавну практику)
+                </p>
+              </li>
+              <li class="list-item">
+                <div class="image-box">
+                  <img
+                    src="./src/img/how-study/check.png"
+                    alt="check"
+                    width="20"
+                  />
+                </div>
+                <p class="item-text">
+                   7-й день – день інтеграції або відпочинку
+                </p>
+              </li>
+              <li class="list-item">
+                <div class="image-box">
+                  <img
+                    src="./src/img/how-study/check.png"
+                    alt="check"
+                    width="20"
+                  />
+                </div>
+                <p class="item-text">Доступ до всіх уроків у Telegram</p>
+              </li>
+              <li class="list-item">
+                <div class="image-box">
+                  <img
+                    src="./src/img/how-study/check.png"
+                    alt="check"
+                    width="20"
+                  />
+                </div>
+                <p class="item-text">
+                  Уроки відкриваються поступово — щодня відкривається новий
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="you-get">
+        <div class="container">
+          <h2 class="title">ЩО ВИ</h2>
+          <p class="subtitle">отримаєте</p>
+          <ul class="list">
+            <li class="list-item">
+              <img src="./src/img/how-study/check.png" alt="check" width="24" />
+              <p class="item-text">
+                28 відео-уроків з простими та ефективними асанами
+              </p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/how-study/check.png" alt="check" width="24" />
+              <p class="item-text">4 відео-зв’язки для комфортної практики</p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/how-study/check.png" alt="check" width="24" />
+              <p class="item-text">
+                30 хвилинна практика глибокого розслаблення
+              </p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/how-study/check.png" alt="check" width="24" />
+              <p class="item-text">Покрокові пояснення для кожної асани</p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/how-study/check.png" alt="check" width="24" />
+              <p class="item-text">
+                Фото матеріали з дослівним перекладом назв асан з Санскриту
+              </p>
+            </li>
+            <li class="list-item">
+              <img src="./src/img/how-study/check.png" alt="check" width="24" />
+              <p class="item-text">
+                Гнучкий доступ – займайтеся коли і де зручно
+              </p>
+            </li>
+          </ul>
+          <p class="access">
+            Курс доступний через Telegram – ви можете займатися як з телефона,
+            так і з комп’ютера
+          </p>
+        </div>
+      </section>
+      <section class="bonuses">
+        <div class="container">
+          <h2 class="title">Бонуси</h2>
+          <p class="subtitle">для тих, хто швидко приймає рішення:</p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="170"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="170"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span
+                  >Смачний PDF-гайд "5 легких рецептів здорового харчування на
+                  кожен день"</span
+                >
+                Збалансовані та прості у приготуванні вегетаріанські страви, які
+                наповнять ваше життя легкістю та зарядять енергією
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="170"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus"
+                  width="170"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span>Змістовне відео "Дихальні практики для початківців"</span>
+                Навчіться правильному диханню, яке допоможе вам розслабитися,
+                покращити концентрацію та отримати ще більше користі від
+                практики йоги та у щоденному житті
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-03-1x.png 1x,
+                    ./src/img/bonuses/bonus-03-2x.png 2x
+                  "
+                  width="170"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-03-1x.png"
+                  alt="bonus"
+                  width="170"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                <span>Чек-лист "Екологічний підхід до практики йоги"</span> Як
+                зробити свою практику більш усвідомленою: вибір килимка,
+                екологічного одягу та мінімізація відходів
+              </p>
+            </li>
+          </ul>
+          <p class="timer-title">Встигніть зареєструватися</p>
+          <div id="countdown-two" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <div class="countdown-label minutes-label"></div>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <div class="countdown-label seconds-label"></div>
+            </div>
+            <div><span class="countdown-doubledot">:</span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+              <div class="countdown-label milliseconds-label"></div>
+            </div>
+          </div>
+          <div class="access-wrapper">
+            <p class="access-text">
+              Доступ до курсу – БЕЗ ОБМЕЖЕНЬ у часі! Ви можете переглядати уроки
+              у зручному темпі та повертатися до них у будь-який момент
+            </p>
+            <div class="price-box">
+              <div class="price-line"></div>
+              <p class="old-price">3470грн</p>
+              <p class="price">347грн</p>
+            </div>
+            <a class="btn" href="">приєднатися ЗІ ЗНИЖКОЮ -90%</a>
+          </div>
+        </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <h2 class="title">програма</h2>
+          <p class="subtitle">курсу</p>
+          <p class="desc">
+            28 днів, які змінять ваше самопочуття. Ви отримаєте не просто набір
+            вправ, а покроковий шлях до усвідомленного контролю свого
+            тіла,балансу та розслаблення
+          </p>
+          <div class="program-container">
+            <ul class="program-list list">
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="short-info-program">
+                    <p class="program-week">Тиждень 1</p>
+                    <p class="program-lessons">уроки 6</p>
+                  </div>
+                  <div class="name-info-program">
+                    <p class="program-item-title">Основи балансу і постави</p>
+                    <p class="program-item-desc">
+                      Легкі, але важливі асани для стабільності та концентрації
+                    </p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="answer-day">День 1</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">Тадасана (поза гори)</p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Корректно вирівнює все тіло
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Поліпшує поставу та розвантажує хребет
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Створює відчуття стійкості та рівноваги
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Урдва Хастасана (підняття рук вгору)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Пробуджує та витягує все тіло
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Створює простір по всій довжині хребта
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Закріпляє шаблон вирівнювання та рухів
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 2</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Хаста Уттанасана (прогин назад з піднятими вгору
+                              руками)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">Покращує кровообіг</p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Відкриває грудну клітку, сприяючи глибшому
+                                  диханню
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Укріплює всю довжину спини
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 3</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">Індулаласана (бічний нахил)</p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Глибоко розтягує боки та хребет
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує баланс та розвиває концентрацію
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує гнучкість тіла
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 4</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">Уттанасана (нахил вперед)</p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Знімає втому і м’язову напругу з шиї, плечей
+                                  та попереку
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує кровообіг у голові
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Допомагає заспокоїти розум та знизити стрес
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 5</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Ардха Уттанасана (половина нахилу вперед)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розтягує та подовжує задню поверхню тіла
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">Укріплює м’язи хребта</p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">Покращує поставу</p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 6</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Комплекс №1 (перша зв’язка асан)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Поєднання всіх вивчених поз у плавну
+                                  послідовність
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Відчуття єдності руху, дихання та свідомості
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Глибше розуміння свого тіла
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <a class="btn blue" href="">Приєднатися до курсу </a>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="short-info-program">
+                    <p class="program-week">Тиждень 2</p>
+                    <p class="program-lessons">уроки 6</p>
+                  </div>
+                  <div class="name-info-program">
+                    <p class="program-item-title">Сила і стійкість</p>
+                    <p class="program-item-desc">
+                      Асани для розвитку внутрішньої сили та енергії
+                    </p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="answer-day">День 7</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">Кумбхакасана (планка)</p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Укріплює м’язи всього тіла
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">Покращує витривалість</p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Укріплює руки та зап’ястя
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 8</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Аштанга Намаскарасана (колінно-грудна поза)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Укріплює силу рук і м’язів преса
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Знімає напругу у верхній частині спини та
+                                  плечах
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розвиває гнучкість хребта
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 9</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">Бхуджангасана (поза кобри)</p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Збільшує рухливість хребта та зміцнює опорні
+                                  м’язи хребта
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розкриває грудну клітину та передню поверхню
+                                  тіла
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розкриває плечовий та грудний відділи
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 10</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Адхо Мукха Шванасана (поза собаки обличчям вниз)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує циркуляцію крові в голові
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розтягує м’язи задньої поверхні тіла
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Укріплює зап’ястя, руки, плечі та стегна
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 11</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">Баласана (поза дитини)</p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  М’яке витяжіння ніг, стегон, хребта
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">Стимулює травлення</p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розслабяє, відновлює, сповільнює
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 12</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Комплекс №2 (друга зв’язка асан)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Укріплює все тіло, розвиває витривалість
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розвиває гнучкість та розширює внутрішній
+                                  простір
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує концентрацію та внутрішню силу
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <a class="btn blue" href="">Приєднатися до курсу </a>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="short-info-program">
+                    <p class="program-week">Тиждень 3</p>
+                    <p class="program-lessons">уроки 6</p>
+                  </div>
+                  <div class="name-info-program">
+                    <p class="program-item-title">
+                      Розслаблення і розкриття тіла
+                    </p>
+                    <p class="program-item-desc">
+                      Асани, які ведуть до легкості та розширення внутрішнього
+                      простору
+                    </p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="answer-day">День 13</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Бітіласана/Марджарьясана (поза корови/кішки)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує гнучкість спини та мобільність хребта
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Допомагає зняти напругу у попереку, полегшує
+                                  біль в спині
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Сприяє координації тіла та розуму
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 14</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Уттана Шишосана (поза цуценяти)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Глибоко розтягує плечі та спину
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">Знімає напругу в шиї</p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Допомагає розслабитися перед сном
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 15</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Паршва Баласана (скрутка у позі дитини)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  М’яко розкриває боки та грудну клітку
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує рухливість хребта
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Допомагає впоратися зі стресом
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 16</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Анджанеясана (поза низького випаду)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує мобільність кульшових суглобів
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розтягує м’язи стегон і паху
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">Покращує баланс</p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 17</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Ардха Хануманасана (половина шпагату)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує гнучкість стегон, підколінних
+                                  сухожиль і попереку
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Вирівнює та розтягує нижню частину спини
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Готує тіло до більш глибоких положень
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 18</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Комплекс №3 (третя зв’язка асан)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Гармонізація руху та розширення внутрішнього
+                                  простору
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращення рухливості суглобів та грудного
+                                  відділу
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Відчуття легкості у всьому тілі
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <a class="btn blue" href="">Приєднатися до курсу </a>
+                  </div>
+                </div>
+              </li>
+              <li class="program-item">
+                <div class="program-title-container">
+                  <div class="short-info-program">
+                    <p class="program-week">Тиждень 4</p>
+                    <p class="program-lessons">уроки 6</p>
+                  </div>
+                  <div class="name-info-program">
+                    <p class="program-item-title">Гнучкість та спокій</p>
+                    <p class="program-item-desc">
+                      Йога як шлях до глибокого відновлення
+                    </p>
+                  </div>
+                  <div class="program-item-svg"></div>
+                </div>
+                <div class="program-answer-container">
+                  <div class="program-wrapper">
+                    <ul class="answer-list">
+                      <li class="answer-item">
+                        <p class="answer-day">День 19</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Пашчімоттанасана (нахил вперед сидячи)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Глибоко розтягує хребет і ноги
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">Подовжує спину</p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">Заспокоює розум</p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 20</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Ардха Пурвоттанасана (положення перевернутого
+                              стіла)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Зміцнює спину, руки, зап’ястя, ноги, м’язи
+                                  живота
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Розкриває грудну клітку
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує циркуляцію енергії в тілі
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 21</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Ардха Матсієндрасана (скрутка сидячи)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Покращує гнучкість хребта
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Масажує внутрішні органи, органів малого тазу
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Сприяє детоксикації організму
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 22</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Джатхара Парівартанасана (скрутка лежачи)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Витягує бокові сторони тіла, поперек та плечі
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Масаж внутрішніх органів, покращує метаболізм
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Заспокійливо впливає на тіло та розум
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 23</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Шавасана (поза глибокого розслаблення/ поза трупа)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Забезпечує глибинне розслаблення
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Підвищує рівень енергії та концентрації
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Допомагає звільнитися від напруження,
+                                  безсоння, втоми
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="answer-item">
+                        <p class="answer-day">День 24</p>
+                        <ul class="exercise-list">
+                          <li class="ex-item">
+                            <p class="ex-title">
+                              Комплекс №4 (фінальна зв’язка)
+                            </p>
+                            <ul class="health-list">
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Завершальна практика для гармонії та балансу
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Скрутки сприяють очищенню тіла, зняттю стресу
+                                  та поліпшення кровообігу
+                                </p>
+                              </li>
+                              <li class="health-item">
+                                <p class="health-text">
+                                  Послідовність надає відчуття розслаблення та
+                                  відновлення
+                                </p>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <a class="btn blue" href="">Приєднатися до курсу </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="after-paid">
+        <div class="container">
+          <picture
+            ><source
+              srcset="
+                ./src/img/after-paid/aroma-1x.png 1x,
+                ./src/img/after-paid/aroma-2x.png 2x
+              "
+              width="86"
+              height="auto" />
+            <img
+              class="paid-image"
+              src="./src/img/after-paid/aroma-1x.png"
+              alt="aroma"
+              width="86"
+              height="auto"
+          /></picture>
+          <h2 class="title">ЩО Відбувається</h2>
+          <p class="subtitle">після оплати?</p>
+          <ul class="list">
+            <li class="list-item">Отримуєте доступ до Telegram-каналу курсу</li>
+            <li class="list-item">Одразу відкривається перший урок</li>
+            <li class="list-item">
+              Кожен наступний урок відкривається на наступний день
+            </li>
+            <li class="list-item">
+              Займаєтесь у комфортному темпі – коли зручно
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-look">
+        <div class="container">
+          <h2 class="title">Як виглядає</h2>
+          <p class="subtitle">процес навчання?</p>
+          <div class="list-wrapper">
+            <img
+              class="arrow arrow-1 left"
+              src="./src/img/how-look/arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="arrow arrow-2 right"
+              src="./src/img/how-look/arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="arrow arrow-3 left"
+              src="./src/img/how-look/arrow.svg"
+              alt="arrow"
+            />
+            <img
+              class="arrow arrow-4 right"
+              src="./src/img/how-look/arrow.svg"
+              alt="arrow"
+            />
+            <ul class="list">
+              <li class="list-item">
+                <div class="item-number-box"><p class="item-number">1</p></div>
+                <p class="item-text">
+                  Відкриваєте відеоурок (1-2 хвилини пояснення асани)
+                </p>
+              </li>
+              <li class="list-item">
+                <div class="item-number-box"><p class="item-number">2</p></div>
+                <p class="item-text">
+                  Пробуєте виконати її, дотримуючись простих рекомендацій
+                </p>
+              </li>
+              <li class="list-item">
+                <div class="item-number-box"><p class="item-number">3</p></div>
+                <p class="item-text">
+                  Якщо виникають питання – пишете їх у спільному чаті
+                </p>
+              </li>
+              <li class="list-item">
+                <div class="item-number-box"><p class="item-number">4</p></div>
+                <p class="item-text">
+                  Кожен 6-й день – відео-зв’язка, щоб поєднати асани в цілісну
+                  послідовність
+                </p>
+              </li>
+              <li class="list-item">
+                <div class="item-number-box"><p class="item-number">5</p></div>
+                <p class="item-text">
+                  На 7-й день – інтеграція та можливість відпочити
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="access-box">
+          <picture
+            ><source
+              srcset="
+                ./src/img/how-look/clock-1x.png 1x,
+                ./src/img/how-look/clock-2x.png 2x
+              "
+              width="116"
+              height="auto" />
+            <img
+              class="clock-image left"
+              src="./src/img/how-look/clock-1x.png"
+              alt="aroma"
+              width="116"
+              height="auto"
+          /></picture>
+          <picture
+            ><source
+              srcset="
+                ./src/img/how-look/clock-1x.png 1x,
+                ./src/img/how-look/clock-2x.png 2x
+              "
+              width="116"
+              height="auto" />
+            <img
+              class="clock-image right"
+              src="./src/img/how-look/clock-1x.png"
+              alt="aroma"
+              width="116"
+              height="auto"
+          /></picture>
+          <div class="access-texts">
+            <p class="access">Доступ до курсу – назавжди!</p>
+            <p class="access-can">
+              Ви зможете повертатися до матеріалів у будь-який момент
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="additional">
+        <div class="container">
+          <h2 class="title">Додаткові можливості:</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/additional/image-01-1x.png 1x,
+                    ./src/img/additional/image-01-2x.png 2x
+                  "
+                  width="43"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/additional/image-01-1x.png"
+                  alt="emoji"
+                  width="43"
+                  height="auto"
+              /></picture>
+              <p class="item-title">Чат підтримки</p>
+              <p class="item-text">
+                спільнота, яка допоможе залишатися мотивованими
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/additional/image-02-1x.png 1x,
+                    ./src/img/additional/image-02-2x.png 2x
+                  "
+                  width="43"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/additional/image-02-1x.png"
+                  alt="emoji"
+                  width="43"
+                  height="auto"
+              /></picture>
+              <p class="item-title">Персональні рекомендації</p>
+              <p class="item-text">
+                ви можете ставити питання та отримувати відповіді від авторки
+                курсу
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/additional/image-03-1x.png 1x,
+                    ./src/img/additional/image-03-2x.png 2x
+                  "
+                  width="43"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/additional/image-03-1x.png"
+                  alt="emoji"
+                  width="43"
+                  height="auto"
+              /></picture>
+              <p class="item-title">Гнучкий графік</p>
+              <p class="item-text">
+                займаєтесь коли завгодно, без прив’язки до конкретного часу
+              </p>
+            </li>
+          </ul>
+          <div class="price-box">
+            <div class="price-line"></div>
+            <p class="old-price">3470грн</p>
+            <p class="price">347грн</p>
+          </div>
+          <a class="btn white" href="">приєднатися ЗІ ЗНИЖКОЮ -90%</a>
+        </div>
+      </section>
+      <section class="your-results">
+        <div class="container">
+          <h2 class="title">Ваші результати</h2>
+          <p class="subtitle">після курсу</p>
+          <p class="desc">
+            Курс, який допоможе вам не просто освоїти асани, а й навчитися
+            виділяти час для себе. Слухати своє тіло та отримаєте навичку
+            контролю розуму
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/your-results/image-01-1x.png 1x,
+                    ./src/img/your-results/image-01-2x.png 2x
+                  "
+                  width="175"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/your-results/image-01-1x.png"
+                  alt="emoji"
+                  width="175"
+                  height="auto"
+              /></picture>
+              <p class="item-title">
+                Сформуєте корисну звичку – 10 хвилин йоги щодня
+              </p>
+              <ul class="news-list">
+                <li class="news-item">
+                  <p class="news-text">
+                    Навчитеся регулярно займатися, навіть у щільному графіку
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Побачите, що йога легко вписується в життя. Йога і є
+                    життя;&#41;
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Ця практика стане вашим ритуалом для тіла та розуму
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/your-results/image-02-1x.png 1x,
+                    ./src/img/your-results/image-02-2x.png 2x
+                  "
+                  width="175"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/your-results/image-02-1x.png"
+                  alt="emoji"
+                  width="175"
+                  height="auto"
+              /></picture>
+              <p class="item-title">Відчуєте зв’язок між тілом і свідомістю</p>
+              <ul class="news-list">
+                <li class="news-item">
+                  <p class="news-text">
+                    Почнете краще розуміти своє тіло та його потреби
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Дізнаєтесь, що йога – це не лише гнучкість, а й гармонія
+                    руху, дихання та уваги
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Навчитеся слухати свої відчуття та рухатися у власному темпі
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/your-results/image-03-1x.png 1x,
+                    ./src/img/your-results/image-03-2x.png 2x
+                  "
+                  width="175"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/your-results/image-03-1x.png"
+                  alt="emoji"
+                  width="175"
+                  height="auto"
+              /></picture>
+              <p class="item-title">Навчитеся зменшувати стрес та напругу</p>
+              <ul class="news-list">
+                <li class="news-item">
+                  <p class="news-text">
+                    Освоїте бонусні дихальні практики, які допоможуть
+                    розслабитися
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Легше справлятися з напруженням у тілі
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Покращите концентрацію та здатність відпочивати
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/your-results/image-04-1x.png 1x,
+                    ./src/img/your-results/image-04-2x.png 2x
+                  "
+                  width="175"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/your-results/image-04-1x.png"
+                  alt="emoji"
+                  width="175"
+                  height="auto"
+              /></picture>
+              <p class="item-title">Покращите якість сну та рівень енергії</p>
+              <ul class="news-list">
+                <li class="news-item">
+                  <p class="news-text">
+                    Ваша нервова система навчиться швидше заспокоюватися
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Ви прокидатиметесь більш відпочилими та спокійними
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Легше справлятиметесь із втомою протягом дня
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/your-results/image-05-1x.png 1x,
+                    ./src/img/your-results/image-05-2x.png 2x
+                  "
+                  width="175"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/your-results/image-05-1x.png"
+                  alt="emoji"
+                  width="175"
+                  height="auto"
+              /></picture>
+              <p class="item-title">Будете готові до більш глибокої практики</p>
+              <ul class="news-list">
+                <li class="news-item">
+                  <p class="news-text">
+                    Освоїте базу хатха-йоги та зможете практикувати самостійно
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Відчуєте, що навіть коротка практика змінює самопочуття
+                  </p>
+                </li>
+                <li class="news-item">
+                  <p class="news-text">
+                    Отримаєте основу для подальшого розвитку
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer"><div class="container"></div></footer>
+    <script src="./src/js/changeDate.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/program.js" type="module"></script>
   </body>
 </html>

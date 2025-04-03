@@ -39,3 +39,9 @@
   src: url(../fonts/FUTURAPT-HEAVY.TTF);
   font-weight: 900;
 }
+
+@font-face {
+  font-family: 'Kindentosca';
+  src: url(../fonts/Kindentosca.otf);
+  font-weight: 400;
+}
