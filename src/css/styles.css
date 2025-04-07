@@ -1781,13 +1781,6 @@
   z-index: 2;
 }
 
-.footer-img {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
 .fop-box {
   color: #090909;
   text-align: center;
@@ -1799,7 +1792,7 @@
   letter-spacing: -0.39px;
   text-transform: uppercase;
 
-  margin-bottom: 12px;
+  margin-bottom: 40px;
 }
 
 .fop-box .name {
@@ -1838,6 +1831,21 @@
   text-align: center;
   font-family: 'Futura PT';
   font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 14.95px */
+  letter-spacing: -0.39px;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.phone-container {
+  display: block;
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 115%; /* 14.95px */
