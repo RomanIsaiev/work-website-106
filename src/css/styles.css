@@ -23,6 +23,18 @@
   max-width: 360px;
 }
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.07;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /* header */
 
 .header {
@@ -148,6 +160,8 @@
   max-width: 292px;
   width: 100%;
   margin: 0 auto;
+
+  animation: pulseScale 1500ms infinite;
 }
 
 /* bonuses */
